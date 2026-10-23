@@ -18,16 +18,17 @@ class MainActivity : AppCompatActivity() {
         display(quantity)
         displayPrice(quantity * 5)
     }
-
-    // ADDED: Increment Method
+    // UPDATED: Increment Method
     fun increment(view: View) {
-        val quantity = 3
+        var quantity = 2
+        quantity = 3
         display(quantity)
     }
 
-    // ADDED: Decrement Method
+    // UPDATED: Decrement Method
     fun decrement(view: View) {
-        val quantity = 1
+        var quantity = 2
+        quantity = 1
         display(quantity)
     }
 
