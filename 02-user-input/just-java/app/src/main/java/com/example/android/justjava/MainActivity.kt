@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
      * This method is called when the order button is clicked.
      */
     fun submitOrder(view: View) {
-        val numberOfCoffees = 2
-        display(numberOfCoffees)
-        displayPrice(numberOfCoffees * 5)
+        val quantity = 5
+        display(quantity)
+        displayPrice(quantity * 5)
     }
 
     /**
