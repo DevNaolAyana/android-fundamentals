@@ -3,15 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-     <!-- Background Image -->
+    <!-- 1. Background Image (Must be first to be in the back) -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/androidparty"
-        android:scaleType="centerCrop" 
-        android:adjustViewBounds="true" /> 
+        android:scaleType="centerCrop" />
 
-       <!-- First TextView -->
+    <!-- 2. First TextView (Happy Birthday) -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +22,7 @@
         android:textStyle="bold"
         android:fontFamily="sans-serif-light" />
 
-    <!-- Second TextView -->
+    <!-- 3. Second TextView (From) -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
