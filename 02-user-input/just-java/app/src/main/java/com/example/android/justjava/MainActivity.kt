@@ -13,26 +13,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    /**
-     * This method is called when the order button is clicked.
-     */
     fun submitOrder(view: View) {
-        val quantity = 5
+        val quantity = 2
         display(quantity)
         displayPrice(quantity * 5)
     }
 
-    /**
-     * This method displays the given quantity value on the screen.
-     */
+    // ADDED: Increment Method
+    fun increment(view: View) {
+        val quantity = 3
+        display(quantity)
+    }
+
+    // ADDED: Decrement Method
+    fun decrement(view: View) {
+        val quantity = 1
+        display(quantity)
+    }
+
     private fun display(number: Int) {
         val quantityTextView = findViewById<TextView>(R.id.quantity_text_view)
         quantityTextView.text = number.toString()
     }
 
-    /**
-     * This method displays the given price on the screen.
-     */
     private fun displayPrice(number: Int) {
         val priceTextView = findViewById<TextView>(R.id.price_text_view)
         priceTextView.text = NumberFormat.getCurrencyInstance().format(number)
