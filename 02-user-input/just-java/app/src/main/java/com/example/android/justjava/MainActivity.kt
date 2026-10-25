@@ -17,24 +17,11 @@ class MainActivity : AppCompatActivity() {
 
     fun submitOrder(view: View) {
         val price = quantity * 5
-        
-        // Task 1
-        val message1 = "Amount Due $" + price
-        
-        // Task 2
-        val message2 = "That would be $" + price + " please."
-        
-        // Task 3
-        val message3 = "You owe " + price + " bucks, dude!"
-        
-        // Task 4
-        val message4 = price.toString() + " dollars for " + quantity + " cups of coffee. Pay up."
-        
-        // Task 5
-        val message5 = "Total: $" + price
-
-        // Change the displayMessage to test each one!
-        displayMessage(message5) 
+        val message = "Name: Naol\n" +
+                "Quantity: $quantity\n" +
+                "Total: $$price\n" +
+                "Thank you!"
+        displayMessage(message)
     }
 
     fun increment(view: View) {
