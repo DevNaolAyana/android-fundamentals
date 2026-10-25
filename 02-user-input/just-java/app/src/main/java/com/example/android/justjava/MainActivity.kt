@@ -8,26 +8,27 @@ import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
 
+    // GLOBAL VARIABLE
+    var quantity = 2
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
     fun submitOrder(view: View) {
-        val quantity = 2
         display(quantity)
         displayPrice(quantity * 5)
     }
-        // Increment Method
+
+    // Increment Method
     fun increment(view: View) {
-        var quantity = 2
         quantity = quantity + 1
         display(quantity)
     }
 
-     // Decrement Method
+    // Decrement Method
     fun decrement(view: View) {
-        var quantity = 2
         quantity = quantity - 1
         display(quantity)
     }
