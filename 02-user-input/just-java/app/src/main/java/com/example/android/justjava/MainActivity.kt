@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    // MODIFIED submitOrder
+    // UPDATED submitOrder with String Concatenation
     fun submitOrder(view: View) {
-        val priceMessage = "Free"
-        displayMessage(priceMessage)
+        val message = "Item count: " + quantity
+        displayMessage(message)
     }
 
     fun increment(view: View) {
@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
         priceTextView.text = NumberFormat.getCurrencyInstance().format(number)
     }
 
-    // ADDED displayMessage method
     private fun displayMessage(message: String) {
         val priceTextView = findViewById<TextView>(R.id.price_text_view)
         priceTextView.text = message
