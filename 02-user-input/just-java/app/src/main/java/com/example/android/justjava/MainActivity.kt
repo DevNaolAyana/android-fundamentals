@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun submitOrder(view: View) {
-        display(quantity)
         displayPrice(quantity * 5)
     }
 
