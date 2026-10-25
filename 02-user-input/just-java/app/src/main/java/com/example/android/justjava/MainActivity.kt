@@ -8,7 +8,6 @@ import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
 
-    // GLOBAL VARIABLE
     var quantity = 2
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,17 +15,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    // MODIFIED submitOrder
     fun submitOrder(view: View) {
-        displayPrice(quantity * 5)
+        val priceMessage = "Free"
+        displayMessage(priceMessage)
     }
 
-    // Increment Method
     fun increment(view: View) {
         quantity = quantity + 1
         display(quantity)
     }
 
-    // Decrement Method
     fun decrement(view: View) {
         quantity = quantity - 1
         display(quantity)
@@ -40,5 +39,11 @@ class MainActivity : AppCompatActivity() {
     private fun displayPrice(number: Int) {
         val priceTextView = findViewById<TextView>(R.id.price_text_view)
         priceTextView.text = NumberFormat.getCurrencyInstance().format(number)
+    }
+
+    // ADDED displayMessage method
+    private fun displayMessage(message: String) {
+        val priceTextView = findViewById<TextView>(R.id.price_text_view)
+        priceTextView.text = message
     }
 }
