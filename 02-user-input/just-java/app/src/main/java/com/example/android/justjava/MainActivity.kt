@@ -15,10 +15,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    // UPDATED submitOrder with String Concatenation
     fun submitOrder(view: View) {
-        val message = "Item count: " + quantity
-        displayMessage(message)
+        val price = quantity * 5
+        
+        // Task 1
+        val message1 = "Amount Due $" + price
+        
+        // Task 2
+        val message2 = "That would be $" + price + " please."
+        
+        // Task 3
+        val message3 = "You owe " + price + " bucks, dude!"
+        
+        // Task 4
+        val message4 = price.toString() + " dollars for " + quantity + " cups of coffee. Pay up."
+        
+        // Task 5
+        val message5 = "Total: $" + price
+
+        // Change the displayMessage to test each one!
+        displayMessage(message5) 
     }
 
     fun increment(view: View) {
