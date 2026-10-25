@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         display(quantity)
     }
 
-    // Decrement Method
+     // Decrement Method
     fun decrement(view: View) {
         var quantity = 2
         quantity = quantity - 1
